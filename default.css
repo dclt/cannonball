@@ -294,7 +294,14 @@
     justify-content: center;
     font-weight: 900;
   }
+
   
+  .homeLibraryButton:hover, .homeLibraryButton:focus, .card:hover, .card:focus {
+	transform: scale(1.1) !important;
+	-webkit-filter: none !important;
+	filter: none !important;
+	box-shadow: 0 0 20px black;
+  }
   /*Theming video page*/
   
   .videoOsdBottom {
@@ -1265,6 +1272,12 @@
     border: 2px solid var(--accent);
   }
   
+  .cardOverlayButtonIcon {
+	width: 1.2em !important;
+	height: 1.2em !important;
+	font-size: 1.5em !important;
+  }
+
   .cardText {
     opacity: 0;
     transition: 0.2s;
@@ -1713,6 +1726,7 @@
   
   .cardDefaultText {
     opacity: 1 !important;
+    font-size: 1.2em;
   }
   
   .layout-mobile .card[data-type="Actor"] .cardText-first {
@@ -1819,6 +1833,22 @@
     transform: scale(1);
   }
   
+  .emby-button {
+	margin: .3em;
+	font-size: inherit;
+	font-family: inherit;
+	color: inherit;
+	padding: .5em 1em;
+	border-radius: .2em;
+	font-weight: 600;
+	line-height: 1.35;
+	transition: .2s;
+  }
+
+  .emby-button > .material-icons {
+	font-size: 1em;
+  }
+
   .pageTitle {
     margin-top: auto;
     margin-bottom: auto;
@@ -2328,14 +2358,14 @@
   }
   
   .dashboardSection {
-    background: black;
+    background: #202020;
     border-radius: 20px;
     padding: 20px;
   }
   
   .dashboardColumn.dashboardColumn-2-60.dashboardColumn-3-46 .paperList {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding: 0 !important;
     color: #ffffffa3;
   }
