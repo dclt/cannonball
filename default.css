@@ -7,161 +7,14 @@
   }
   
   /*Fonts - Inter, League Spartan & JetBrains Mono*/
-  /*Inter*/
-  @font-face {
-    font-family: "Inter";
-    font-weight: 100;
-    font-display: optional;
-    src: url('./fonts/Inter-Thin.woff2')
-        format("woff2"),
-      url('./fonts/Inter-Thin.woff')
-        format("woff");
-  }
-  @font-face {
-    font-family: "Inter";
-    font-weight: 300;
-    font-display: optional;
-    src: url('./fonts/Inter-Light.woff2')
-        format("woff2"),
-      url('./fonts/Inter-Light.woff')
-        format("woff");
-  }
-  @font-face {
-    font-family: "Inter";
-    font-weight: 400;
-    font-display: optional;
-    src: url('./fonts/Inter-Regular.woff2')
-        format("woff2"),
-      url('./fonts/Inter-Regular.woff')
-        format("woff");
-  }
-  @font-face {
-    font-family: "Inter";
-    font-weight: 700;
-    font-display: optional;
-    src: url('./fonts/Inter-Bold.woff2')
-        format("woff2"),
-      url('./fonts/Inter-Bold.woff')
-        format("woff");
-  }
-  @font-face {
-    font-family: "Inter";
-    font-weight: 800;
-    font-display: optional;
-    src: url('./fonts/Inter-ExtraBold.woff2')
-        format("woff2"),
-      url('./fonts/Inter-ExtraBold.woff')
-        format("woff");
-  }
-  @font-face {
-    font-family: "Inter";
-    font-weight: 900;
-    font-display: optional;
-    src: url('./fonts/Inter-Black.woff2')
-        format("woff2"),
-      url('./fonts/Inter-Black.woff')
-        format("woff");
-
-  /*League Spartan*/
-  @font-face {
-    font-family: "League Spartan";
-    font-weight: 200;
-    font-display: optional;
-    src: url('./fonts/LeagueSpartan-ExtraLight.woff2')
-        format("woff2"),
-      url('./fonts/LeagueSpartan-ExtraLight.woff')
-        format("woff");
-  }
-  @font-face {
-    font-family: "League Spartan";
-    font-weight: 300;
-    font-display: optional;
-    src: url('./fonts/LeagueSpartan-Light.woff2')
-        format("woff2"),
-      url('./fonts/LeagueSpartan-Light.woff')
-        format("woff");
-  }
-  @font-face {
-    font-family: "League Spartan";
-    font-weight: 400;
-    font-display: optional;
-    src: url('./fonts/LeagueSpartan-Regular.woff2')
-        format("woff2"),
-      url('./fonts/LeagueSpartan-Regular.woff')
-        format("woff");
-  }
-  @font-face {
-    font-family: "League Spartan";
-    font-weight: 700;
-    font-display: optional;
-    src: url('./fonts/LeagueSpartan-Bold.woff2')
-        format("woff2"),
-      url('./fonts/LeagueSpartan-Bold.woff')
-        format("woff");
-  }
-  @font-face {
-    font-family: "League Spartan";
-    font-weight: 800;
-    font-display: optional;
-    src: url('./fonts/LeagueSpartan-ExtraBold.woff2')
-        format("woff2"),
-      url('./fonts/LeagueSpartan-ExtraBold.woff')
-        format("woff");
-  }
-  @font-face {
-    font-family: "League Spartan";
-    font-weight: 900;
-    font-display: optional;
-    src: url('./fonts/LeagueSpartan-Black.woff2')
-        format("woff2"),
-      url('./fonts/LeagueSpartan-Black.woff')
-        format("woff");
-
-  /*JetBrains Mono*/
-
-  @font-face {
-    font-family: "JetBrains Mono";
-    font-weight: 100;
-    font-display: optional;
-    src: url('./fonts/JetBrainsMono-Thin.woff2')
-        format("woff2");
-  }
-  @font-face {
-    font-family: "JetBrains Mono";
-    font-weight: 300;
-    font-display: optional;
-    src: url('./fonts/JetBrainsMono-Light.woff2')
-        format("woff2");
-  }
-  @font-face {
-    font-family: "JetBrains Mono";
-    font-weight: 400;
-    font-display: optional;
-    src: url('./fonts/JetBrainsMono-Regular.woff2')
-        format("woff2");
-  }
-  @font-face {
-    font-family: "JetBrains Mono";
-    font-weight: 700;
-    font-display: optional;
-    src: url('./fonts/JetBrainsMono-Bold.woff2')
-        format("woff2");
-  }
-  @font-face {
-    font-family: "JetBrains Mono";
-    font-weight: 800;
-    font-display: optional;
-    src: url('./fonts/JetBrainsMono-ExtraBold.woff2')
-        format("woff2");
-  }
-
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;800;900&family=JetBrains+Mono:wght@100;300;400;700;800&family=League+Spartan:wght@200;300;400;700;800;900&display=swap');
 
   body,
   h1,
   h2,
   h3,
   h4 {
-    font-family: "League Spartan", 
+    font-family: 'League Spartan', 
     -apple-system, 
     BlinkMacSystemFont, 
     helvetica, 
@@ -178,27 +31,27 @@
   
   /*Firefox*/
   .videoSubtitles {
-    font-family: "Inter", sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
     font-weight: 700 !important;
     text-shadow: 0px 0px 8px rgba(0, 0, 0, 1) !important;
   }
   
   /*Chrome, Edge Chromium & Saffari*/
   video::-webkit-media-text-track-display {
-    font-family: "Inter", sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
     font-weight: 700 !important;
     text-shadow: rgba(0, 0, 0, 1) 0em 0em 0.2em !important;
   }
   
   /*backup for subtitles*/
   video::-webkit-media-text-track-container {
-    font-family: "Inter", sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
     font-weight: 700 !important;
     text-shadow: rgba(0, 0, 0, 1) 0em 0em 0.2em !important;
   }
   
   video:cue {
-    font-family: "Inter", sans-serif !important;
+    font-family: 'Inter', sans-serif !important;
     font-weight: 700 !important;
     text-shadow: rgba(0, 0, 0, 1) 0em 0em 0.2em !important;
   }
